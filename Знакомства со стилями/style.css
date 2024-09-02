@@ -1,0 +1,57 @@
+/* p {
+  color: blue;
+}
+
+.js {
+  color: pink;
+}
+
+#html {
+  color: orange;
+}
+
+.react {
+  color: green !important;
+}
+
+h1,
+h2 {
+  color: purple;
+  font-size: 16px;
+}
+
+button {
+  color: white;
+  background: gray;
+  border: none;
+
+  &:hover {
+    color: blueviolet;
+  }
+
+  &:active {
+    background: red;
+  }
+} */
+
+/* button:hover {
+
+} */
+/* Ctr + / */
+
+/*
+
+  dsadsadsa
+  dsa
+  dsa
+  dasdas
+  das
+  dsa
+  d
+  s
+*/
+
+body {
+  /* Типографика */
+  font-family: "Nerko One", cursive;
+}
