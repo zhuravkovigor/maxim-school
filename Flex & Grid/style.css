@@ -1,0 +1,82 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.flex {
+  display: inline-flex;
+  flex-direction: row;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.card {
+  background: #444;
+  width: 120px;
+  height: 120px;
+  border-radius: 10px;
+  color: white;
+
+  display: inherit;
+  /* По горизонтали */
+  justify-content: center;
+  /* По вертикали */
+  align-items: center;
+
+  font-size: 32px;
+}
+
+.container {
+  background: red;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  height: 100vh;
+}
+
+.header {
+  height: 120px;
+  background: #ddd;
+
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+  justify-content: space-between;
+}
+
+.header-nav > ul {
+  list-style-type: none;
+  display: flex;
+  gap: 20px;
+}
+
+.item {
+  background: #666;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 300px;
+  height: 300px;
+}
+
+.item-center {
+  align-self: flex-start;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+article {
+  background: #555;
+  height: 200px;
+
+  display: grid;
+  align-items: center;
+  justify-content: center;
+}
