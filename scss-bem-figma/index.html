@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- BEM - BLOCK, ELEMENT, MODEL -->
+
+    <header class="header">
+      <a class="header__logo" href="/">
+        <img src="./images/logo.png" alt="Logo" />
+      </a>
+
+      <ul class="header-nav">
+        <li>
+          <a class="header-nav__link" href="#about">About Us</a>
+        </li>
+        <li>
+          <a class="header-nav__link" href="#work">How it Work</a>
+        </li>
+        <li>
+          <a class="header-nav__link" href="#pricing">Pricing</a>
+        </li>
+        <li>
+          <a class="header-nav__link" href="#faqs">FAQs</a>
+        </li>
+      </ul>
+
+      <div class="header__auth">
+        <button class="button button--white">Login</button>
+        <button class="button">Sign Up</button>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero-info">
+          <h2 class="hero-info__title">
+            Always Track & Analyze Your Business Statistics To Succeed.
+          </h2>
+          <p class="hero-info__description">
+            A better way to manage your sales, team, clients & marketing — on a
+            single platform. Powerful, affordable & easy.
+          </p>
+
+          <div class="hero-info__email">
+            <input placeholder="Enter your email" type="email" class="input" />
+            <button class="button">Get started</button>
+          </div>
+
+          <div class="hero-info__pay">
+            <img src="./images/visa.svg" alt="" />
+            <img src="./images/mastercard.svg" alt="" />
+            <img src="./images/paypall.svg" alt="" />
+          </div>
+        </div>
+
+        <img class="hero__img" src="./images/hero.png" alt="Hero" />
+      </section>
+    </main>
+  </body>
+</html>
