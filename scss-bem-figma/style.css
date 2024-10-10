@@ -14,19 +14,18 @@ body {
   background: #f0f0f0;
 }
 
-@media (prefers-color-scheme: dark) {
-  body {
-    background: red;
-  }
-}
 .header {
   max-width: 1260px;
   margin: 0 auto;
+  padding: 0 30px;
   display: flex;
   align-items: center;
   height: 116px;
   gap: 40px;
   justify-content: space-between;
+}
+.header__menu {
+  display: none;
 }
 .header__auth {
   display: flex;
@@ -60,32 +59,59 @@ body {
 .hero {
   max-width: 1260px;
   margin: 0 auto;
+  padding: 0 30px;
   display: flex;
   gap: 90px;
 }
-.hero .hero-info {
+.hero-info {
   margin-top: 60px;
 }
-.hero .hero-info__email {
+.hero-info__email {
   display: flex;
   width: 505px;
   margin-top: 40px;
 }
-.hero .hero-info__pay {
+.hero-info__pay {
   margin-top: 80px;
   display: flex;
   gap: 28px;
 }
-.hero .hero-info__title {
+.hero-info__title {
   font-size: 60px;
   font-weight: 500;
 }
-.hero .hero-info__description {
+.hero-info__description {
   font-size: 18px;
   margin-top: 20px;
   width: 565px;
 }
 
+@media screen and (max-width: 410px) {
+  .header__auth {
+    display: none;
+  }
+  .header__menu {
+    display: block;
+  }
+  .header-nav {
+    display: none;
+  }
+  .hero__img {
+    display: none;
+  }
+  .hero-info__title {
+    font-size: 50px;
+    width: 100%;
+  }
+  .hero-info__description {
+    width: 100%;
+  }
+  .hero-info__email {
+    display: flex;
+    width: 100%;
+    margin-top: 40px;
+  }
+}
 .input {
   padding: 14px 16px;
   width: 100%;
@@ -105,6 +131,7 @@ body {
 .about {
   max-width: 1260px;
   margin: 0 auto;
+  padding: 0 30px;
   margin-top: 200px;
   display: flex;
   gap: 40px;
@@ -147,6 +174,7 @@ body {
 .work {
   max-width: 1260px;
   margin: 0 auto;
+  padding: 0 30px;
   margin-top: 200px;
   display: flex;
   justify-content: space-between;

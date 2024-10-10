@@ -5,6 +5,7 @@ $section-spacing: 200px;
 @mixin container {
   max-width: $container-width;
   margin: 0 auto;
+  padding: 0 30px;
 }
 
 * {
@@ -23,12 +24,6 @@ body {
   background: #f0f0f0;
 }
 
-@media (prefers-color-scheme: dark) {
-  body {
-    background: red;
-  }
-}
-
 .header {
   @include container;
 
@@ -37,6 +32,10 @@ body {
   height: 116px;
   gap: 40px;
   justify-content: space-between;
+
+  &__menu {
+    display: none;
+  }
 
   &__auth {
     display: flex;
@@ -77,7 +76,7 @@ body {
   display: flex;
   gap: 90px;
 
-  .hero-info {
+  &-info {
     margin-top: 60px;
 
     &__email {
@@ -101,6 +100,45 @@ body {
       font-size: 18px;
       margin-top: 20px;
       width: 565px;
+    }
+  }
+}
+
+@media screen and (max-width: 410px) {
+  .header {
+    &__auth {
+      display: none;
+    }
+
+    &__menu {
+      display: block;
+    }
+
+    &-nav {
+      display: none;
+    }
+  }
+
+  .hero {
+    &__img {
+      display: none;
+    }
+
+    &-info {
+      &__title {
+        font-size: 50px;
+        width: 100%;
+      }
+
+      &__description {
+        width: 100%;
+      }
+
+      &__email {
+        display: flex;
+        width: 100%;
+        margin-top: 40px;
+      }
     }
   }
 }
