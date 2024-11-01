@@ -11,7 +11,7 @@
 
     <link rel="stylesheet" href="./style.css" />
   </head>
-  <body>
+  <body class="app">
     <aside class="sidebar">
       <img class="sidebar__logo" src="./images/logo.svg" alt="" />
 
@@ -97,5 +97,78 @@
         <p class="profile__email">samwheeler@example.com</p>
       </div>
     </aside>
+
+    <main class="container">
+      <div class="content-head">
+        <h2 class="head head--large">Reports</h2>
+
+        <button class="button">
+          <img src="./images/download.svg" alt="Download" />
+          <span>Download</span>
+        </button>
+      </div>
+      <div class="line"></div>
+      <div class="filter">
+        <select class="select">
+          <option>Last 7 Days</option>
+          <option>This Month</option>
+          <option>This Year</option>
+        </select>
+        <select class="select">
+          <option>Last 7 Days</option>
+          <option>This Month</option>
+          <option>This Year</option>
+        </select>
+        <select class="select">
+          <option>Last 7 Days</option>
+          <option>This Month</option>
+          <option>This Year</option>
+        </select>
+      </div>
+
+      <div class="statistic">
+        <div class="statistic-item">
+          <div class="head">Active Users</div>
+          <div class="statistic__number">
+            27<span class="gray-text">/80</span>
+          </div>
+        </div>
+        <div class="statistic-item">
+          <div class="head">Questions Answered</div>
+          <div class="statistic__number">3,298</div>
+        </div>
+        <div class="statistic-item">
+          <div class="head">Av. Session Length</div>
+          <div class="statistic__number">2m 34s</div>
+        </div>
+        <div class="statistic-item">
+          <div class="head">Starting Knowledge</div>
+          <div class="statistic__number">64%</div>
+          <img
+            class="statistic__image"
+            src="./images/statistick-know.png"
+            alt=""
+          />
+        </div>
+        <div class="statistic-item">
+          <div class="head">Current Knowledge</div>
+          <div class="statistic__number">86%</div>
+          <img
+            class="statistic__image"
+            src="./images/statistick-know.png"
+            alt=""
+          />
+        </div>
+        <div style="height: 40%" class="statistic-item">
+          <div class="head">Knowledge Gain</div>
+          <div class="statistic__number">+34%</div>
+          <img
+            class="statistic__image"
+            src="./images/statistick-know.png"
+            alt=""
+          />
+        </div>
+      </div>
+    </main>
   </body>
 </html>
