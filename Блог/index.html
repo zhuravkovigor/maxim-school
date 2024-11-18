@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Блог</title>
+
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body class="container">
+    <h2 class="head head--large">Новости</h2>
+    <div class="story-count">
+      Кол-во новостей - <span id="posts-count">5</span>
+    </div>
+
+    <select id="count">
+      <option value="5">Отобразить 5</option>
+      <option value="10">Отобразить 10</option>
+      <option value="20">Отобразить 20</option>
+    </select>
+
+    <section class="posts" id="posts"></section>
+
+    <script src="script.js"></script>
+  </body>
+</html>
