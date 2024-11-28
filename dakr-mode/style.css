@@ -1,0 +1,19 @@
+:root {
+  color-scheme: light dark;
+}
+
+button {
+  background: light-dark(#777, #fff);
+  color: light-dark(white, black);
+  border: none;
+  padding: 12px;
+}
+
+body {
+  background: light-dark(#fff, #000);
+  color-scheme: light;
+}
+
+body.dark-theme {
+  color-scheme: dark;
+}
