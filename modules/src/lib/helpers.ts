@@ -7,3 +7,7 @@ greatings("Oleg");
 export function greatings1(name: string) {
   console.log(`Hello, ${name}`);
 }
+
+export function getSomething() {
+  return "something";
+}
