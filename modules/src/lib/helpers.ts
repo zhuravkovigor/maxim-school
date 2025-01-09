@@ -11,3 +11,7 @@ export function greatings1(name: string) {
 export function getSomething() {
   return "something";
 }
+
+export function sayHi(name: string) {
+  console.log(`Hello, ${name}!`);
+}
